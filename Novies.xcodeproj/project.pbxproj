@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		534553922B94B04400573709 /* NoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553912B94B04400573709 /* NoviesApp.swift */; };
+		534553942B94B04400573709 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553932B94B04400573709 /* ContentView.swift */; };
+		534553962B94B04600573709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534553952B94B04600573709 /* Assets.xcassets */; };
+		534553992B94B04600573709 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534553982B94B04600573709 /* Preview Assets.xcassets */; };
+		534553A32B94B04600573709 /* NoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553A22B94B04600573709 /* NoviesTests.swift */; };
+		534553AD2B94B04600573709 /* NoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553AC2B94B04600573709 /* NoviesUITests.swift */; };
+		534553AF2B94B04600573709 /* NoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5345539F2B94B04600573709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 534553862B94B04400573709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5345538D2B94B04400573709;
+			remoteInfo = Novies;
+		};
+		534553A92B94B04600573709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 534553862B94B04400573709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5345538D2B94B04400573709;
+			remoteInfo = Novies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5345538E2B94B04400573709 /* Novies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		534553912B94B04400573709 /* NoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesApp.swift; sourceTree = "<group>"; };
+		534553932B94B04400573709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		534553952B94B04600573709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		534553982B94B04600573709 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5345539E2B94B04600573709 /* NoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		534553A22B94B04600573709 /* NoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesTests.swift; sourceTree = "<group>"; };
+		534553A82B94B04600573709 /* NoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		534553AC2B94B04600573709 /* NoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesUITests.swift; sourceTree = "<group>"; };
+		534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5345538B2B94B04400573709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345539B2B94B04600573709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534553A52B94B04600573709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		534553852B94B04400573709 = {
+			isa = PBXGroup;
+			children = (
+				534553902B94B04400573709 /* Novies */,
+				534553A12B94B04600573709 /* NoviesTests */,
+				534553AB2B94B04600573709 /* NoviesUITests */,
+				5345538F2B94B04400573709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5345538F2B94B04400573709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5345538E2B94B04400573709 /* Novies.app */,
+				5345539E2B94B04600573709 /* NoviesTests.xctest */,
+				534553A82B94B04600573709 /* NoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		534553902B94B04400573709 /* Novies */ = {
+			isa = PBXGroup;
+			children = (
+				534553912B94B04400573709 /* NoviesApp.swift */,
+				534553932B94B04400573709 /* ContentView.swift */,
+				534553952B94B04600573709 /* Assets.xcassets */,
+				534553972B94B04600573709 /* Preview Content */,
+			);
+			path = Novies;
+			sourceTree = "<group>";
+		};
+		534553972B94B04600573709 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				534553982B94B04600573709 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		534553A12B94B04600573709 /* NoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				534553A22B94B04600573709 /* NoviesTests.swift */,
+			);
+			path = NoviesTests;
+			sourceTree = "<group>";
+		};
+		534553AB2B94B04600573709 /* NoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				534553AC2B94B04600573709 /* NoviesUITests.swift */,
+				534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */,
+			);
+			path = NoviesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5345538D2B94B04400573709 /* Novies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534553B22B94B04600573709 /* Build configuration list for PBXNativeTarget "Novies" */;
+			buildPhases = (
+				5345538A2B94B04400573709 /* Sources */,
+				5345538B2B94B04400573709 /* Frameworks */,
+				5345538C2B94B04400573709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novies;
+			productName = Novies;
+			productReference = 5345538E2B94B04400573709 /* Novies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5345539D2B94B04600573709 /* NoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534553B52B94B04600573709 /* Build configuration list for PBXNativeTarget "NoviesTests" */;
+			buildPhases = (
+				5345539A2B94B04600573709 /* Sources */,
+				5345539B2B94B04600573709 /* Frameworks */,
+				5345539C2B94B04600573709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				534553A02B94B04600573709 /* PBXTargetDependency */,
+			);
+			name = NoviesTests;
+			productName = NoviesTests;
+			productReference = 5345539E2B94B04600573709 /* NoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		534553A72B94B04600573709 /* NoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534553B82B94B04600573709 /* Build configuration list for PBXNativeTarget "NoviesUITests" */;
+			buildPhases = (
+				534553A42B94B04600573709 /* Sources */,
+				534553A52B94B04600573709 /* Frameworks */,
+				534553A62B94B04600573709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				534553AA2B94B04600573709 /* PBXTargetDependency */,
+			);
+			name = NoviesUITests;
+			productName = NoviesUITests;
+			productReference = 534553A82B94B04600573709 /* NoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		534553862B94B04400573709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					5345538D2B94B04400573709 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					5345539D2B94B04600573709 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 5345538D2B94B04400573709;
+					};
+					534553A72B94B04600573709 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 5345538D2B94B04400573709;
+					};
+				};
+			};
+			buildConfigurationList = 534553892B94B04400573709 /* Build configuration list for PBXProject "Novies" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 534553852B94B04400573709;
+			productRefGroup = 5345538F2B94B04400573709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5345538D2B94B04400573709 /* Novies */,
+				5345539D2B94B04600573709 /* NoviesTests */,
+				534553A72B94B04600573709 /* NoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5345538C2B94B04400573709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534553992B94B04600573709 /* Preview Assets.xcassets in Resources */,
+				534553962B94B04600573709 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345539C2B94B04600573709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534553A62B94B04600573709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5345538A2B94B04400573709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534553942B94B04400573709 /* ContentView.swift in Sources */,
+				534553922B94B04400573709 /* NoviesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345539A2B94B04600573709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534553A32B94B04600573709 /* NoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534553A42B94B04600573709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534553AF2B94B04600573709 /* NoviesUITestsLaunchTests.swift in Sources */,
+				534553AD2B94B04600573709 /* NoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		534553A02B94B04600573709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5345538D2B94B04400573709 /* Novies */;
+			targetProxy = 5345539F2B94B04600573709 /* PBXContainerItemProxy */;
+		};
+		534553AA2B94B04600573709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5345538D2B94B04400573709 /* Novies */;
+			targetProxy = 534553A92B94B04600573709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		534553B02B94B04600573709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		534553B12B94B04600573709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		534553B32B94B04600573709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Novies/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.Novies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		534553B42B94B04600573709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Novies/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.Novies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		534553B62B94B04600573709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.NoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Novies";
+			};
+			name = Debug;
+		};
+		534553B72B94B04600573709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.NoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Novies";
+			};
+			name = Release;
+		};
+		534553B92B94B04600573709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.NoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novies;
+			};
+			name = Debug;
+		};
+		534553BA2B94B04600573709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoav.NoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		534553892B94B04400573709 /* Build configuration list for PBXProject "Novies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534553B02B94B04600573709 /* Debug */,
+				534553B12B94B04600573709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534553B22B94B04600573709 /* Build configuration list for PBXNativeTarget "Novies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534553B32B94B04600573709 /* Debug */,
+				534553B42B94B04600573709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534553B52B94B04600573709 /* Build configuration list for PBXNativeTarget "NoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534553B62B94B04600573709 /* Debug */,
+				534553B72B94B04600573709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534553B82B94B04600573709 /* Build configuration list for PBXNativeTarget "NoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534553B92B94B04600573709 /* Debug */,
+				534553BA2B94B04600573709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 534553862B94B04400573709 /* Project object */;
+}
