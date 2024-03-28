@@ -7,18 +7,37 @@
 
 import SwiftUI
 
+
+//NoviesTavView: this view is respobnsible for the TabView, it contains all the tabs the user can see.
+
 struct NoviesTabView: View {
+    @State var showAccountInfo = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TabView{
+                HomeViewAlternate()
+                    .tabItem {
+                        Label(AppDesign.homeViewText, systemImage: AppDesign.homeViewImage)
+                    }
+                
+                GenreView()
+                .tabItem {
+                    Label(AppDesign.mustWatchText, systemImage: AppDesign.mustWatchImage)
+                }
+                
+                AlreadyWatchedView()
+                    .tabItem {
+                        Label(AppDesign.watchedText, systemImage: AppDesign.watchedImage)
+                    }
+                
+
+            }
+            
         }
-        .padding()
     }
-}
 
 #Preview {
-    NoviesTabView()
+    NoviesTabView().environmentObject(WatchedMovies())
 }
+
+

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//LoadingView: design of the loading view.
 struct LoadingView: View {
     var body: some View {
         ZStack{

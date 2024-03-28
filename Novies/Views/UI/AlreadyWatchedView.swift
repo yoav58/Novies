@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+//AlreadyWatchedView this view include all the views the user already say
+
+
 struct AlreadyWatchedView: View {
     
     @EnvironmentObject  var watchedMovies : WatchedMovies
     var toolBarColor = AppDesign.toolBarColor
+    @State private var isShowAccountInfo = false
+    
+
     
     
     var body: some View {
@@ -21,7 +27,10 @@ struct AlreadyWatchedView: View {
                     List{
                         ForEach(watchedMovies.movies, id: \.Title){
                             movie in
-                            MovieFrame(text: movie.Title, remoteMovie: MovieRemoteImage(urlString: movie.Poster))
+                            WatchedMovieFrameView(movie: movie)
+//                            MovieFrame(text: movie.Title, remoteMovie: MovieRemoteImage(urlString: movie.Poster), scaleImage: 1.4)
+                                //.padding(.leading, 80)
+
                         }
                         .onDelete(perform: { indexSet in
                             watchedMovies.movies.remove(atOffsets: indexSet)
@@ -32,22 +41,17 @@ struct AlreadyWatchedView: View {
 
                 
                 .toolbar{
-                    ToolbarItem{
-                        NavigationLink(destination: AccountInfoView()){
-                            Image(systemName: "person.crop.circle")
-                        }
-                    }
+
                     ToolbarItem(placement: .principal){
                         Image(AppDesign.noviesSymbol)
                             .resizable()
                             .frame(width: 50,height: 50)
                     }
-                }.navigationBarTitleDisplayMode(.inline) // may delete
-                    .toolbarBackground(toolBarColor.opacity(0.08))
-                    .toolbarColorScheme(.dark, for: .navigationBar)
-                    .toolbarBackground(.visible, for: .navigationBar)
+               }.modifier(TopBarModifier())
                     .background(.white)
-                
+                    .fullScreenCover(isPresented: $isShowAccountInfo){
+                        AccountInfoView(isShowAccountInfo: $isShowAccountInfo)
+                    }
                 
                 
                 if watchedMovies.movies.isEmpty {

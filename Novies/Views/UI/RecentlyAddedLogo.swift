@@ -7,9 +7,20 @@
 
 import SwiftUI
 
+// the logo of recent movies at the home page.
 struct RecentlyAddedLogo: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Image("RecentlyAdded")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 250, height: 350)
+
+            // Gradient overlay at the bottom of the image
+            LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.7)]), startPoint: .top, endPoint: .bottom)
+                .frame(height: 350)
+
+        }
     }
 }
 

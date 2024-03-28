@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+
+class MovieFrameViewModel {
+    
+    var color : Color = .gray
+    
+
+    
+    func selectColor(title : String ,watchedMovies: WatchedMovies){
+        
+    }
+}

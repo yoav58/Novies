@@ -7,10 +7,15 @@
 
 import SwiftUI
 
-
+//MustWatchView all the movies the user must watch 
 struct MustWatchView: View {
-    @StateObject var mustWatchVM : MustWatchViewModel = MustWatchViewModel()
-
+     @StateObject var mustWatchVM : MustWatchViewModel // = MustWatchViewModel()
+    var toolBarColor = AppDesign.toolBarColor
+    @State private var isShowAccountInfo = false
+    
+    init(_ genre: String){
+        self._mustWatchVM = StateObject(wrappedValue: MustWatchViewModel(movieGenre: genre))
+    }
     
     var body: some View {
         
@@ -18,23 +23,17 @@ struct MustWatchView: View {
             NavigationStack{
                 MoviesScroller(Movies:mustWatchVM.movies, isShowDetails: $mustWatchVM.isShowDetails, currentMovieDetail: $mustWatchVM.currentMovieDetails )
                     .toolbar{
-                        ToolbarItem{
-                            NavigationLink(destination: AccountInfoView()){
-                                Image(systemName: "person.crop.circle")
-                            }
-                        }
+
                         
                         ToolbarItem(placement: .principal){
-                            Image("NoviesSymbol")
+                            Image(AppDesign.noviesSymbol)
                                 .resizable()
                                 .frame(width: 50,height: 50)
                         }
-                    }.navigationBarTitleDisplayMode(.inline) // may delete
-                    .toolbarColorScheme(.dark, for: .navigationBar)
-                    .toolbarBackground(.visible, for: .navigationBar)
-                    .background(Color("BackGround").opacity(0.9)) // Adjust the background color here
-                    //.ignoresSafeArea()
-                Spacer()
+                    }.modifier(TopBarModifier())
+                
+                    .padding(.top,2)
+
                 
             } .task{
                 mustWatchVM.addAllMovies()
@@ -44,14 +43,18 @@ struct MustWatchView: View {
                 Alert(title: alertInput.title, message: alertInput.message,dismissButton: alertInput.dismissButton)
             }.blur(radius: mustWatchVM.isShowDetails ? 20 : 0)
                 .disabled(mustWatchVM.isShowDetails)
-                
+                .fullScreenCover(isPresented: $isShowAccountInfo){
+                    AccountInfoView(isShowAccountInfo: $isShowAccountInfo)
+                }
             
             if mustWatchVM.isShowDetails {
                 MovieDetailsView(movie: mustWatchVM.currentMovieDetails!,isShowDetails: $mustWatchVM.isShowDetails)
             }
             
-            if mustWatchVM.isLoading {
+            if mustWatchVM.isLoading{
                 LoadingView()
+                
+
             }
                 
             
@@ -64,5 +67,5 @@ struct MustWatchView: View {
 }
 
 #Preview {
-    MustWatchView().environmentObject(WatchedMovies())
+    MustWatchView("Action").environmentObject(WatchedMovies())
 }

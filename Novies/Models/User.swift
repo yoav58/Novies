@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct User : Codable {
+    var firstName = ""
+    var lastName = ""
+    var date = Date()
+}
+

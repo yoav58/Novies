@@ -11,11 +11,14 @@ import FirebaseCore
 import FirebaseFirestore
 
 
+//MARK: -  TopMovieManager: this object is to manage the data from firestore
+
 final class TopMovieManager : ObservableObject {
     static let shared = TopMovieManager()
     var movies: [MovieFirestore] = []
     var name2TitleNote : [String : String] = [:]
     var name2Note : [String : String] = [:]
+    var name2ReasonInList : [String : String] = [:]
     private var db = Firestore.firestore()
     private init() {}
     @Published var isFetching = true
@@ -48,8 +51,10 @@ final class TopMovieManager : ObservableObject {
                 let genre = document.data()["Genre"] as? String ?? " "
                 let titleNote = document.data()["NoteTitle"] as? String ?? " "
                 let note = document.data()["Note"] as? String ?? " "
+                let whyItsIn = document.data()["WhyItsIn"] as? String ?? " "
                 self.name2TitleNote[id] = titleNote
                 self.name2Note[id] = note
+                self.name2ReasonInList[id] = whyItsIn
                 
                 return MovieFirestore(id: id, genre: genre)
                 

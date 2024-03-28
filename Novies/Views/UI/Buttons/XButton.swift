@@ -7,9 +7,20 @@
 
 import SwiftUI
 
+//XButton: simple X button the quit from view
 struct XButton: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Circle()
+                .frame(width:30,height: 30)
+                .foregroundColor(.gray)
+                .opacity(0.2)
+            
+            Image(systemName: "xmark")
+                .imageScale(.small)
+                .frame(width: 44,height: 44)
+                .foregroundColor(.primary)
+        }
     }
 }
 

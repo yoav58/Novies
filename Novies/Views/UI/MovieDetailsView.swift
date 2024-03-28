@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MovieDetailsView: the movie detail view, when the user press on a movie this view appear
 struct MovieDetailsView: View {
     var movie : Movie = MockMovie.TheGodfather
     var whyItsIn : String = " "
@@ -25,25 +26,46 @@ struct MovieDetailsView: View {
                 MovieSmallDetail(dataName: "Runtime", dataInto: movie.Runtime)
 
             }
-            Text("Plot")
-                .font(.headline)
-                .fontWeight(.semibold)
-                .padding(.top)
-            
-            Text(movie.Plot).font(.system(size: 12))
-                .italic()
+            ScrollView{
+                VStack{
+                    Text("Plot")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding(.top)
+                    
+                    Text(movie.Plot).font(.system(size: 12))
+                        //.italic()
+                        .padding(.leading,4)
+                    
+                    Text("Why It's In That List?")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding(.top)
+                    
+                    Text(TopMovieManager.shared.name2ReasonInList[movie.Title] ?? " ").font(.system(size: 12))
+                        //.italic()
+                        .padding(.leading,4)
 
-            Spacer()
+                }
+                
+                
+            }
             
+            // in case the movie already watched the button will not work.
             Button(
                 action: 
                     {
                         watched.movies.append(movie)
+                        isShowDetails = false
                     }
                    
                    , label: {
-                WatchedButton(text: "Add to Watched List")
+                       if(watched.isContainMovie(title: movie.Title)) {WatchedButton(text:"Watched", color: Color("watchedColor2"))}
+                       else{
+                           WatchedButton(text: "Add to Watched List")
+                       }
             }).padding(.bottom)
+                .disabled(watched.isContainMovie(title: movie.Title))
             
             
             

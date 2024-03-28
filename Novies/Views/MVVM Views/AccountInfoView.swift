@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+//MARK: currently not available.
 struct AccountInfoView: View {
     @StateObject var viewModel = AccountInfoViewModel()
+    @Binding var isShowAccountInfo : Bool
 
 
 
@@ -20,9 +22,6 @@ struct AccountInfoView: View {
                 Section {
                     TextField("First Name", text: $viewModel.user.firstName)
                     TextField("Last Name", text: $viewModel.user.lastName)
-//                    TextField("Email", text: $email)
-//                        .keyboardType(.emailAddress)
-//                        .textInputAutocapitalization(.never)
                     
                     DatePicker("Birthday", selection: $viewModel.user.date, displayedComponents: .date)
 
@@ -38,6 +37,19 @@ struct AccountInfoView: View {
                 }
 
             }.navigationTitle("My Account")
+                .toolbar{
+                    Button(
+                        action:
+                                {
+                                    isShowAccountInfo = false
+                                }
+                            
+                            
+                            
+                            , label: {
+                                Image(systemName: "chevron.right")
+                            })
+                }
                 .onAppear{
                     viewModel.retrieveUser()
                 }
@@ -49,5 +61,5 @@ struct AccountInfoView: View {
 }
 
 #Preview {
-    AccountInfoView()
+    AccountInfoView(isShowAccountInfo: .constant(true))
 }

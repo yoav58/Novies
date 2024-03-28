@@ -7,13 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53303CAA2BA8906000002AFE /* TopMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53303CA92BA8906000002AFE /* TopMovieManager.swift */; };
+		53303CAC2BA89A5F00002AFE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 53303CAB2BA89A5F00002AFE /* FirebaseFirestore */; };
+		53303CAE2BA89A5F00002AFE /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 53303CAD2BA89A5F00002AFE /* FirebaseFirestoreCombine-Community */; };
+		53303CB02BA89A5F00002AFE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 53303CAF2BA89A5F00002AFE /* FirebaseFirestoreSwift */; };
+		53303CB22BA97D3100002AFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53303CB12BA97D3100002AFE /* HomeView.swift */; };
+		53303CB82BAA006600002AFE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53303CB72BAA006600002AFE /* HomeViewModel.swift */; };
+		53303CBC2BAAC82200002AFE /* GeneralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53303CBB2BAAC82200002AFE /* GeneralData.swift */; };
+		533DE2162B9E6F740018689F /* WatchedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533DE2152B9E6F740018689F /* WatchedButton.swift */; };
+		533DE2182B9E700B0018689F /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533DE2172B9E700B0018689F /* XButton.swift */; };
 		534553922B94B04400573709 /* NoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553912B94B04400573709 /* NoviesApp.swift */; };
-		534553942B94B04400573709 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553932B94B04400573709 /* ContentView.swift */; };
+		534553942B94B04400573709 /* NoviesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553932B94B04400573709 /* NoviesTabView.swift */; };
 		534553962B94B04600573709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534553952B94B04600573709 /* Assets.xcassets */; };
 		534553992B94B04600573709 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534553982B94B04600573709 /* Preview Assets.xcassets */; };
 		534553A32B94B04600573709 /* NoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553A22B94B04600573709 /* NoviesTests.swift */; };
 		534553AD2B94B04600573709 /* NoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553AC2B94B04600573709 /* NoviesUITests.swift */; };
 		534553AF2B94B04600573709 /* NoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */; };
+		534553C02B94B11600573709 /* MustWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553BF2B94B11600573709 /* MustWatchView.swift */; };
+		534553C22B94B12800573709 /* AlreadyWatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553C12B94B12800573709 /* AlreadyWatchedView.swift */; };
+		534553C92B94CA6600573709 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553C82B94CA6600573709 /* Movie.swift */; };
+		534553CD2B9555A800573709 /* MoviesScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553CC2B9555A800573709 /* MoviesScroller.swift */; };
+		534553D62B95F63700573709 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553D52B95F63700573709 /* NetworkManager.swift */; };
+		534553D82B9605B400573709 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553D72B9605B400573709 /* APError.swift */; };
+		534553DA2B9764CE00573709 /* MustWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553D92B9764CE00573709 /* MustWatchViewModel.swift */; };
+		534553DD2B976BEF00573709 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553DC2B976BEF00573709 /* AlertItem.swift */; };
+		534553DF2B97973C00573709 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534553DE2B97973C00573709 /* LoadingView.swift */; };
+		5347CF8C2BAADF7A0072CF87 /* RecentlyAddedLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347CF8B2BAADF7A0072CF87 /* RecentlyAddedLogo.swift */; };
+		5347CF8E2BAAE1E30072CF87 /* HomeViewAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347CF8D2BAAE1E30072CF87 /* HomeViewAlternate.swift */; };
+		539D75002B9F5466005037BD /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D74FF2B9F5466005037BD /* AccountInfoView.swift */; };
+		539D75022B9F5D30005037BD /* AccountInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75012B9F5D30005037BD /* AccountInfoViewModel.swift */; };
+		539D75042BA001BE005037BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75032BA001BE005037BD /* User.swift */; };
+		539D75062BA0B112005037BD /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75052BA0B112005037BD /* EmptyState.swift */; };
+		539D75082BA0BA54005037BD /* WatchedMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75072BA0BA54005037BD /* WatchedMovies.swift */; };
+		539D750C2BA14C5B005037BD /* MovieFrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D750B2BA14C5B005037BD /* MovieFrameViewModel.swift */; };
+		539D750F2BA2B839005037BD /* AppDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D750E2BA2B839005037BD /* AppDesign.swift */; };
+		539D75142BA37AA6005037BD /* WatchedMovieFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75132BA37AA6005037BD /* WatchedMovieFrameView.swift */; };
+		539D75162BA6632E005037BD /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75152BA6632E005037BD /* GenreView.swift */; };
+		539D75182BA6664C005037BD /* TopBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75172BA6664C005037BD /* TopBarModifier.swift */; };
+		539D751A2BA6680B005037BD /* GenreFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D75192BA6680B005037BD /* GenreFrameView.swift */; };
+		539D751C2BA689FC005037BD /* NoviesLogoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D751B2BA689FC005037BD /* NoviesLogoScreen.swift */; };
+		53BD3FA72BAF6CEE0044F1F9 /* MoviesDetailViewAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BD3FA62BAF6CEE0044F1F9 /* MoviesDetailViewAlternate.swift */; };
+		53DD85322B9DF62D008C70EC /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD85312B9DF62D008C70EC /* RemoteImage.swift */; };
+		53DD85342B9DF92F008C70EC /* צילום מסך 2024-03-10 ב-16.20.22.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD85332B9DF92F008C70EC /* צילום מסך 2024-03-10 ב-16.20.22.png */; };
+		53DD85362B9DFC9F008C70EC /* MovieFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD85352B9DFC9F008C70EC /* MovieFrame.swift */; };
+		53DD853A2B9E0BAE008C70EC /* TopMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD85392B9E0BAE008C70EC /* TopMoviesList.swift */; };
+		53DD853E2B9E46DC008C70EC /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD853D2B9E46DC008C70EC /* MovieDetailsView.swift */; };
+		53E6357F2BA802C1004AC071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53E6357E2BA802C1004AC071 /* GoogleService-Info.plist */; };
+		53E635802BA802C1004AC071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53E6357E2BA802C1004AC071 /* GoogleService-Info.plist */; };
+		53E635812BA802C1004AC071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53E6357E2BA802C1004AC071 /* GoogleService-Info.plist */; };
+		53E635842BA80409004AC071 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 53E635832BA80409004AC071 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +76,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53303CA92BA8906000002AFE /* TopMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovieManager.swift; sourceTree = "<group>"; };
+		53303CB12BA97D3100002AFE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		53303CB72BAA006600002AFE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		53303CBB2BAAC82200002AFE /* GeneralData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralData.swift; sourceTree = "<group>"; };
+		533DE2152B9E6F740018689F /* WatchedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedButton.swift; sourceTree = "<group>"; };
+		533DE2172B9E700B0018689F /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
 		5345538E2B94B04400573709 /* Novies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534553912B94B04400573709 /* NoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesApp.swift; sourceTree = "<group>"; };
-		534553932B94B04400573709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		534553932B94B04400573709 /* NoviesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesTabView.swift; sourceTree = "<group>"; };
 		534553952B94B04600573709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534553982B94B04600573709 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5345539E2B94B04600573709 /* NoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +92,36 @@
 		534553A82B94B04600573709 /* NoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		534553AC2B94B04600573709 /* NoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesUITests.swift; sourceTree = "<group>"; };
 		534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		534553BF2B94B11600573709 /* MustWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustWatchView.swift; sourceTree = "<group>"; };
+		534553C12B94B12800573709 /* AlreadyWatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyWatchedView.swift; sourceTree = "<group>"; };
+		534553C82B94CA6600573709 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		534553CC2B9555A800573709 /* MoviesScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesScroller.swift; sourceTree = "<group>"; };
+		534553D52B95F63700573709 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		534553D72B9605B400573709 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		534553D92B9764CE00573709 /* MustWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustWatchViewModel.swift; sourceTree = "<group>"; };
+		534553DC2B976BEF00573709 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		534553DE2B97973C00573709 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5347CF8B2BAADF7A0072CF87 /* RecentlyAddedLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyAddedLogo.swift; sourceTree = "<group>"; };
+		5347CF8D2BAAE1E30072CF87 /* HomeViewAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAlternate.swift; sourceTree = "<group>"; };
+		539D74FF2B9F5466005037BD /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
+		539D75012B9F5D30005037BD /* AccountInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewModel.swift; sourceTree = "<group>"; };
+		539D75032BA001BE005037BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		539D75052BA0B112005037BD /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		539D75072BA0BA54005037BD /* WatchedMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedMovies.swift; sourceTree = "<group>"; };
+		539D750B2BA14C5B005037BD /* MovieFrameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFrameViewModel.swift; sourceTree = "<group>"; };
+		539D750E2BA2B839005037BD /* AppDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesign.swift; sourceTree = "<group>"; };
+		539D75132BA37AA6005037BD /* WatchedMovieFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedMovieFrameView.swift; sourceTree = "<group>"; };
+		539D75152BA6632E005037BD /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		539D75172BA6664C005037BD /* TopBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarModifier.swift; sourceTree = "<group>"; };
+		539D75192BA6680B005037BD /* GenreFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreFrameView.swift; sourceTree = "<group>"; };
+		539D751B2BA689FC005037BD /* NoviesLogoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoviesLogoScreen.swift; sourceTree = "<group>"; };
+		53BD3FA62BAF6CEE0044F1F9 /* MoviesDetailViewAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailViewAlternate.swift; sourceTree = "<group>"; };
+		53DD85312B9DF62D008C70EC /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		53DD85332B9DF92F008C70EC /* צילום מסך 2024-03-10 ב-16.20.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "צילום מסך 2024-03-10 ב-16.20.22.png"; sourceTree = "<group>"; };
+		53DD85352B9DFC9F008C70EC /* MovieFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFrame.swift; sourceTree = "<group>"; };
+		53DD85392B9E0BAE008C70EC /* TopMoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesList.swift; sourceTree = "<group>"; };
+		53DD853D2B9E46DC008C70EC /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		53E6357E2BA802C1004AC071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +129,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53303CAE2BA89A5F00002AFE /* FirebaseFirestoreCombine-Community in Frameworks */,
+				53E635842BA80409004AC071 /* FirebaseAnalytics in Frameworks */,
+				53303CAC2BA89A5F00002AFE /* FirebaseFirestore in Frameworks */,
+				53303CB02BA89A5F00002AFE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +153,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533DE2142B9E6F610018689F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				533DE2152B9E6F740018689F /* WatchedButton.swift */,
+				533DE2172B9E700B0018689F /* XButton.swift */,
+				539D75192BA6680B005037BD /* GenreFrameView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		534553852B94B04400573709 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +186,12 @@
 		534553902B94B04400573709 /* Novies */ = {
 			isa = PBXGroup;
 			children = (
+				53E6357E2BA802C1004AC071 /* GoogleService-Info.plist */,
+				53DD853C2B9E393B008C70EC /* Utilities */,
+				534553C52B94B3C000573709 /* Models */,
+				534553C42B94B3B800573709 /* View Models */,
+				534553C32B94B3B200573709 /* Views */,
 				534553912B94B04400573709 /* NoviesApp.swift */,
-				534553932B94B04400573709 /* ContentView.swift */,
 				534553952B94B04600573709 /* Assets.xcassets */,
 				534553972B94B04600573709 /* Preview Content */,
 			);
@@ -121,10 +217,88 @@
 		534553AB2B94B04600573709 /* NoviesUITests */ = {
 			isa = PBXGroup;
 			children = (
+				53DD85332B9DF92F008C70EC /* צילום מסך 2024-03-10 ב-16.20.22.png */,
 				534553AC2B94B04600573709 /* NoviesUITests.swift */,
 				534553AE2B94B04600573709 /* NoviesUITestsLaunchTests.swift */,
 			);
 			path = NoviesUITests;
+			sourceTree = "<group>";
+		};
+		534553C32B94B3B200573709 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				539D750D2BA2A131005037BD /* MVVM Views */,
+				534553DB2B976BBE00573709 /* UI */,
+				534553932B94B04400573709 /* NoviesTabView.swift */,
+				539D75152BA6632E005037BD /* GenreView.swift */,
+				539D751B2BA689FC005037BD /* NoviesLogoScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		534553C42B94B3B800573709 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				534553D92B9764CE00573709 /* MustWatchViewModel.swift */,
+				539D75012B9F5D30005037BD /* AccountInfoViewModel.swift */,
+				539D750B2BA14C5B005037BD /* MovieFrameViewModel.swift */,
+				53303CB72BAA006600002AFE /* HomeViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		534553C52B94B3C000573709 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				534553C82B94CA6600573709 /* Movie.swift */,
+				539D75032BA001BE005037BD /* User.swift */,
+				539D75072BA0BA54005037BD /* WatchedMovies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		534553DB2B976BBE00573709 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				534553C12B94B12800573709 /* AlreadyWatchedView.swift */,
+				539D75052BA0B112005037BD /* EmptyState.swift */,
+				53DD853D2B9E46DC008C70EC /* MovieDetailsView.swift */,
+				534553DE2B97973C00573709 /* LoadingView.swift */,
+				533DE2142B9E6F610018689F /* Buttons */,
+				534553CC2B9555A800573709 /* MoviesScroller.swift */,
+				539D75132BA37AA6005037BD /* WatchedMovieFrameView.swift */,
+				5347CF8B2BAADF7A0072CF87 /* RecentlyAddedLogo.swift */,
+				53BD3FA62BAF6CEE0044F1F9 /* MoviesDetailViewAlternate.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		539D750D2BA2A131005037BD /* MVVM Views */ = {
+			isa = PBXGroup;
+			children = (
+				5347CF8D2BAAE1E30072CF87 /* HomeViewAlternate.swift */,
+				534553BF2B94B11600573709 /* MustWatchView.swift */,
+				539D74FF2B9F5466005037BD /* AccountInfoView.swift */,
+				53DD85352B9DFC9F008C70EC /* MovieFrame.swift */,
+				53303CB12BA97D3100002AFE /* HomeView.swift */,
+			);
+			path = "MVVM Views";
+			sourceTree = "<group>";
+		};
+		53DD853C2B9E393B008C70EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				53DD85392B9E0BAE008C70EC /* TopMoviesList.swift */,
+				539D750E2BA2B839005037BD /* AppDesign.swift */,
+				534553DC2B976BEF00573709 /* AlertItem.swift */,
+				534553D72B9605B400573709 /* APError.swift */,
+				534553D52B95F63700573709 /* NetworkManager.swift */,
+				53DD85312B9DF62D008C70EC /* RemoteImage.swift */,
+				539D75172BA6664C005037BD /* TopBarModifier.swift */,
+				53303CBB2BAAC82200002AFE /* GeneralData.swift */,
+				53303CA92BA8906000002AFE /* TopMovieManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +317,12 @@
 			dependencies = (
 			);
 			name = Novies;
+			packageProductDependencies = (
+				53E635832BA80409004AC071 /* FirebaseAnalytics */,
+				53303CAB2BA89A5F00002AFE /* FirebaseFirestore */,
+				53303CAD2BA89A5F00002AFE /* FirebaseFirestoreCombine-Community */,
+				53303CAF2BA89A5F00002AFE /* FirebaseFirestoreSwift */,
+			);
 			productName = Novies;
 			productReference = 5345538E2B94B04400573709 /* Novies.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +395,9 @@
 				Base,
 			);
 			mainGroup = 534553852B94B04400573709;
+			packageReferences = (
+				53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5345538F2B94B04400573709 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +416,7 @@
 			files = (
 				534553992B94B04600573709 /* Preview Assets.xcassets in Resources */,
 				534553962B94B04600573709 /* Assets.xcassets in Resources */,
+				53E6357F2BA802C1004AC071 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E635802BA802C1004AC071 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DD85342B9DF92F008C70EC /* צילום מסך 2024-03-10 ב-16.20.22.png in Resources */,
+				53E635812BA802C1004AC071 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +444,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534553942B94B04400573709 /* ContentView.swift in Sources */,
+				53DD853A2B9E0BAE008C70EC /* TopMoviesList.swift in Sources */,
+				533DE2182B9E700B0018689F /* XButton.swift in Sources */,
+				534553C22B94B12800573709 /* AlreadyWatchedView.swift in Sources */,
+				53303CB82BAA006600002AFE /* HomeViewModel.swift in Sources */,
+				539D75082BA0BA54005037BD /* WatchedMovies.swift in Sources */,
+				539D75162BA6632E005037BD /* GenreView.swift in Sources */,
+				533DE2162B9E6F740018689F /* WatchedButton.swift in Sources */,
+				539D75022B9F5D30005037BD /* AccountInfoViewModel.swift in Sources */,
+				539D750F2BA2B839005037BD /* AppDesign.swift in Sources */,
+				534553942B94B04400573709 /* NoviesTabView.swift in Sources */,
+				534553D62B95F63700573709 /* NetworkManager.swift in Sources */,
+				539D751A2BA6680B005037BD /* GenreFrameView.swift in Sources */,
+				53DD85322B9DF62D008C70EC /* RemoteImage.swift in Sources */,
+				534553DA2B9764CE00573709 /* MustWatchViewModel.swift in Sources */,
+				539D75002B9F5466005037BD /* AccountInfoView.swift in Sources */,
+				539D750C2BA14C5B005037BD /* MovieFrameViewModel.swift in Sources */,
+				539D75042BA001BE005037BD /* User.swift in Sources */,
+				5347CF8C2BAADF7A0072CF87 /* RecentlyAddedLogo.swift in Sources */,
+				53303CB22BA97D3100002AFE /* HomeView.swift in Sources */,
+				53DD85362B9DFC9F008C70EC /* MovieFrame.swift in Sources */,
+				53DD853E2B9E46DC008C70EC /* MovieDetailsView.swift in Sources */,
+				53303CAA2BA8906000002AFE /* TopMovieManager.swift in Sources */,
+				534553D82B9605B400573709 /* APError.swift in Sources */,
+				53BD3FA72BAF6CEE0044F1F9 /* MoviesDetailViewAlternate.swift in Sources */,
+				5347CF8E2BAAE1E30072CF87 /* HomeViewAlternate.swift in Sources */,
+				53303CBC2BAAC82200002AFE /* GeneralData.swift in Sources */,
+				539D75182BA6664C005037BD /* TopBarModifier.swift in Sources */,
+				534553C92B94CA6600573709 /* Movie.swift in Sources */,
+				534553DF2B97973C00573709 /* LoadingView.swift in Sources */,
+				539D75142BA37AA6005037BD /* WatchedMovieFrameView.swift in Sources */,
+				539D751C2BA689FC005037BD /* NoviesLogoScreen.swift in Sources */,
+				534553CD2B9555A800573709 /* MoviesScroller.swift in Sources */,
 				534553922B94B04400573709 /* NoviesApp.swift in Sources */,
+				534553C02B94B11600573709 /* MustWatchView.swift in Sources */,
+				534553DD2B976BEF00573709 /* AlertItem.swift in Sources */,
+				539D75062BA0B112005037BD /* EmptyState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,16 +640,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Novies/Preview Content\"";
+				DEVELOPMENT_TEAM = SRLD732WSQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Novies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +661,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yoav.Novies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,16 +676,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Novies/Preview Content\"";
+				DEVELOPMENT_TEAM = SRLD732WSQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Novies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,9 +697,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yoav.Novies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -582,6 +819,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53303CAB2BA89A5F00002AFE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		53303CAD2BA89A5F00002AFE /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		53303CAF2BA89A5F00002AFE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		53E635832BA80409004AC071 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53E635822BA80409004AC071 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 534553862B94B04400573709 /* Project object */;
 }

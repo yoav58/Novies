@@ -10,22 +10,31 @@ import SwiftUI
 
 let columns : [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
 
+// this view is scroller of the the movies inside it
 struct MoviesScroller: View {
     
     var Movies : [Movie]
+    @Binding var isShowDetails : Bool
+    @Binding var currentMovieDetail : Movie?
     
     var body: some View {
-        VStack{
-            ScrollView{
+        ScrollView{
+            VStack{
                 LazyVGrid(columns: columns){
                     ForEach(Movies, id: \.Title){
                         movie in
-                        //Image(movie.Poster)
-                          //  .resizable()
-                            //.frame(width: 200,height: 200)
-                        Text(movie.Title)
-                        Text(movie.Year)
+                        MovieFrame(text: movie.Title, remoteMovie: MovieRemoteImage(urlString: movie.Poster))
+                            .onTapGesture {
+                                withAnimation(.spring()) {
+                                    currentMovieDetail = movie
+                                    isShowDetails = true
+                                }
+                                
+                            }.clipShape(RoundedRectangle(cornerRadius: 10))
+                            .shadow(radius: 5)
+                        
                     }.navigationTitle("Must Watch")
+                        
                     
                 }
             }
@@ -34,5 +43,5 @@ struct MoviesScroller: View {
 }
 
 #Preview {
-    MoviesScroller(Movies: MockMovie.movies)
+    MoviesScroller(Movies: MockMovie.movies,isShowDetails: .constant(false),currentMovieDetail: .constant(MockMovie.Godfather2)).environmentObject(WatchedMovies())
 }

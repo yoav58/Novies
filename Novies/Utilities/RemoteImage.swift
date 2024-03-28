@@ -16,7 +16,7 @@ final class ImageLoader : ObservableObject {
     
    @Published var image : Image? = nil
     
-    
+    // to download the image
     func load(fromUrlString : String){
         NetworkManager.shared.downloadImage(fromUrlString: fromUrlString){
             uiImage in
@@ -49,9 +49,15 @@ struct MovieRemoteImage : View {
     let urlString : String
     
     var body: some View {
-        RemoteImage(image: imageLoader.image)
-            .onAppear(){
-                imageLoader.load(fromUrlString: urlString)
-            }
+        
+        if let value = NetworkManager.shared.cache.object(forKey: NSString(string: urlString)){
+            RemoteImage(image: Image(uiImage:value))
+        }
+        else{
+            RemoteImage(image: imageLoader.image)
+                .onAppear(){
+                    imageLoader.load(fromUrlString: urlString)
+                }
+        }
     }
 }

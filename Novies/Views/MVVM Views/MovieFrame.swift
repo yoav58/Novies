@@ -7,28 +7,33 @@
 
 import SwiftUI
 
+//MovieFrame: this movie will appear in movie details as the image of the movie
 struct MovieFrame: View {
     
     var text : String = "No Movie"
     var remoteMovie : MovieRemoteImage 
-    var color : Color = .gray
+    var color : Color = AppDesign.frameColor
     @EnvironmentObject var watchedMovies : WatchedMovies
+    var textColor = AppDesign.textFrameColor
+    var BackGroundColor = AppDesign.backgroundFrameColor
+    var scaleImage : CGFloat = 1
     var body: some View {
         
         VStack{
-            remoteMovie.frame(width: 190,height: 160)
+            //190 160
+            remoteMovie.frame(width: 190 * scaleImage ,height: 270 * scaleImage)
             Text(text)
-                .font(.headline) // Customize this as needed
+                .font(.footnote) // Customize this as needed // headline
                 .scaledToFit()
-                .fontWeight(.medium) // Adjust weight as desired
-                .foregroundColor(.primary) // Or any custom color
+                .fontWeight(.regular) // Adjust weight as desired // been .medium
+                .foregroundColor(textColor) // Or any custom color !!! my change
                 //.shadow(radius: 1) // Adds a subtle shadow for better legibility
                 .fixedSize(horizontal: false, vertical: true) // Allows text to wrap if needed
                 .padding(.bottom)
                 
-
-        }.padding().frame(width: 190, height: 188).background(watchedMovies.isContainMovie(title: text)
-                                                              ? Color("watchedColor").opacity(0.3) : Color.white.opacity(0.1)
+        //190, 188
+        }.padding().frame(width: 190 * scaleImage, height: 298 * scaleImage).background(watchedMovies.isContainMovie(title: text)
+                                                              ? AppDesign.watchedColor : BackGroundColor
                                                               ,ignoresSafeAreaEdges: .all)
     }
 }

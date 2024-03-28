@@ -33,7 +33,7 @@ struct HomeView: View {
                             
                         })
                         LinearGradient(gradient: Gradient(colors: [.clear, Color(UIColor.systemBackground)]), startPoint: .center, endPoint: .bottom)
-                            .frame(height: 100)
+                            .frame(height: 200)
                         
                         
 
@@ -60,36 +60,17 @@ struct HomeView: View {
                     
                     
                     
- // this part for some reason not work, deal with it later
-                    
-//                    ForEach(viewModel.recentlyAdded?.recentId ?? [""], id: \.self){
-//                        movie in
-//                        AsyncImage(url: URL(string: "https://img.omdbapi.com/?i=\(movie)&h=600&apikey=")
-//                                   , content: {
-//                            im in
-//                            im.resizable()
-//                                .frame(width: 190, height: 285)
-//                                .clipped()
-//
-//                                
-//                        }
-//                                   , placeholder: {
-//                            LoadingView()
-//                            
-//                        })
-//                            
-//                    }
+
                 }
                 
-//                Text("Novies' Least Favorites")
-//                    .fontWeight(.semibold)
+
                 
                     
                     
                     
                     
                 }
-            }.modifier(homeLogoModifier())
+            }.modifier(TopBarModifier())
 
         }
     }
@@ -106,7 +87,7 @@ struct homeLogoModifier : ViewModifier{
             }
         }.navigationBarTitleDisplayMode(.inline) // may delete
             .toolbarBackground(AppDesign.toolBarColor.opacity(0.08))
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarColorScheme(.light, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
     }
 }
